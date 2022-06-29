@@ -80,7 +80,7 @@ methods: {
   },
     async loadMarkers() {
         this.$store.state.potholes.forEach((pothole) => {
-          const coordinate = [Number(pothole.latitude), Number(pothole.longitude)];
+          const coordinate = [Number(pothole.longitude), Number(pothole.latitude)];
           
           new mapboxgl.Marker({
             color: "#D80739",

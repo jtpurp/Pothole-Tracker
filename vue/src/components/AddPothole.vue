@@ -7,8 +7,8 @@
         <div class="display-area">
           <div class="coordinates-header">
             <h3>Pothole Coordinates</h3>
-            <p>Latitude: {{ center[0] }}</p>
-            <p>Longitude: {{ center[1] }}</p>
+            <p>Latitude: {{ center[1] }}</p>
+            <p>Longitude: {{ center[0] }}</p>
           </div>
           <div class="coordinates-header">
             <h3>Pothole Location</h3>
@@ -120,8 +120,8 @@ addPothole() {
         userId: this.$store.state.user.id,
         progressStatusId: 1,
         severityId: null,
-        latitude: this.center[0],
-        longitude: this.center[1],
+        longitude: this.center[0],
+        latitude: this.center[1],
         streetAddress: this.location,
         reportedDate: "",
         inspectedDate: "",

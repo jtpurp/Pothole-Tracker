@@ -12,7 +12,7 @@ public class Pothole {
     private Integer severityId;
     private String latitude;
     private String longitude;
-    private String streetAddress; //Remove if not being used by API
+    private String streetAddress;
     private Date reportedDate;
     private String inspectedDate;
     private String repairedDate;

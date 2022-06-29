@@ -18,7 +18,7 @@
     <p>Notes: <span>{{ activePothole.notes }}</span></p>
   </div>
   <div id="map-buttons">
-  <img class="pic" :src="`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+ff0000(${activePothole.latitude},${activePothole.longitude})/${activePothole.latitude},${activePothole.longitude},15,0/500x300?access_token=pk.eyJ1IjoiY2Fwc3RvbmUyMDIyIiwiYSI6ImNsMXZpNGhpODMyMGMzZWp4bHlnZXgwcHYifQ.-R9gcADgsFp36mSwSwrr-g`">
+  <img class="pic" :src="`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+ff0000(${activePothole.longitude},${activePothole.latitude})/${activePothole.longitude},${activePothole.latitude},15,0/500x300?access_token=pk.eyJ1IjoiY2Fwc3RvbmUyMDIyIiwiYSI6ImNsMXZpNGhpODMyMGMzZWp4bHlnZXgwcHYifQ.-R9gcADgsFp36mSwSwrr-g`">
   <div class="button">
     <button class="btn" type="update" v-on:click="changeUpdateForm" v-show="$store.state.user.authorities[0].name == 'ROLE_ADMIN'">Update</button>
     <button class="btn" type="btnDeletePothole" v-on:click="deletePothole(activePothole.potholeId)" v-show="$store.state.user.authorities[0].name == 'ROLE_ADMIN'">Delete</button>
